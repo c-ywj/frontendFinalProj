@@ -1,0 +1,18 @@
+// Footer Styles
+footer {
+    background-color: $footer-border-color;
+
+    p {
+        @include margin-absolute-0;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.footer-nav {
+    a:visited { color: #62006a; }
+    a:focus { color:magenta ; }
+    a:hover { color: lightblue; }
+    a:active { color: #000000; }
+}

@@ -1,0 +1,29 @@
+// Main Nav Styles
+
+.main-nav {
+    margin: 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 72px;
+
+            &:hover {
+                background-color: $bg-nav-hover-color;
+                border-bottom: $site-highlight-color 4px solid;
+            }
+
+            a {
+                color: black;
+                display: block;
+                text-decoration: none;
+            }
+        }
+    }
+}
