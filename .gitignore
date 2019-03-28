@@ -100,3 +100,6 @@ dev/styles/*.map
 *.swp
 *.vi
 *~
+
+*.css
+*.css.map
