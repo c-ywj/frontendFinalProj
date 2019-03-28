@@ -1,4 +1,5 @@
 // Header Styles
+$header-height: auto;
 header {
     @include flex-layout-row;
     height: $header-height;
