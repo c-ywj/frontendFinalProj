@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+.month {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+    border: 1px solid grey;
+    padding: 1px;
+}
+
+.day > h4 {
+    margin: 0;
+    text-align: center;
+    background-color: lightblue;
+}
