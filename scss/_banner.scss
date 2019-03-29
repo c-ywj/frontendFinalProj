@@ -2,10 +2,9 @@
 .banner {
     position: relative;
     z-index: 800;
-    height: 5%;
 
     img {
-        animation: fadeIn 1s ease both;
+        animation: fadeIn 4s ease both;
     }
 
 }
@@ -15,7 +14,7 @@
     top: 4vw;
 	left: 8vw;
 	color: white;
-    animation: slideInLeft 1s 0.5s 1 ease both;
+    animation: slideInLeft 1.5s 0.5s 1 ease both;
 
     @include mq($tablet-portait) {
         &{
@@ -41,45 +40,6 @@
     h1 {
         margin-bottom: 0.2em;
     }
-
-
-    .price {
-        font-size: 1.4em;
-
-        @include mq($tablet-portait) {
-            &{
-                font-size: 1.2em;
-            }
-        }
-
-        @include mq($tablet-portrait-medium) {
-            &{
-                font-size: 0.8rem;
-            }
-        }
-
-        strong {
-            font-size: 1.2em;
-
-            @include mq($tablet-portait) {
-                &{
-                    font-size: 1.0em;
-                }
-            }
-        }
-
-        @include mq($phone-wide) {
-            &{
-                display: none;
-            }
-        }
-    }
-
-    a {
-        color: white;
-    }
-
-
 }
 
 // Banner Image Animation Keyframes
