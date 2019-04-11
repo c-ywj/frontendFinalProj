@@ -1,4 +1,4 @@
-.contact-info-box
+.staff-info-box
 {
      -moz-border-radius: 6px;
      -webkit-border-radius: 6px;
@@ -15,7 +15,7 @@
 	grid-template-columns: 1fr 1fr;
 }
 
-.contact-inner-box
+.person
 {
      -moz-border-radius: 6px;
      -webkit-border-radius: 6px;
@@ -30,43 +30,19 @@
      margin: 20px;
 }
 
-label.description
+.role
 {
-	border:none;
-	color:#222;
-	display:block;
-	font-size:95%;
-	font-weight:700;
-	line-height:150%;
-	padding:0 0 1px;
+     font-style: italic;
+     margin: 5px;
 }
 
-.heading
+.email
 {
-	border:none;
-	margin-left: 50px;
+     color: darkblue;
+     margin: 5px;
 }
 
-form ul
+.course
 {
-	font-size:100%;
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	width:100%;
-}
-
-form li
-{
-	display:block;
-	margin:0;
-	padding:4px 5px 2px 9px;
-	position:relative;
-}
-
-form li div
-{
-	color:#444;
-	margin:0 4px 0 0;
-	padding:0 0 8px;
+     margin: 5px;
 }

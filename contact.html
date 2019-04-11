@@ -32,9 +32,10 @@
             </nav>
         </header>
         <main>
-            <h1>Contact Us</h1>
+            <h1 class="heading">Contact Us</h1>
             <section class="contact-info-box">
                     <h2>Helpfull Links</h2>
+                    <div></div>
                     <ul>
                         <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
                         <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
@@ -45,7 +46,7 @@
                 </section>
             <section class="contact-info-box">
                 <h2>Contact Information</h2>
-                
+                <div></div>
                 <section class="contact-inner-box">
                         <h4>For admission and program inquiries: </h4>
                         <ul>
@@ -65,70 +66,81 @@
                             </li>
                         </ul>
                     </section>
-
             </section>
-                <section class="contact-info-box">
-                    <h2>Contact Form</h2>
-                    <form id="form_56778" class="appnitro"  method="post" action="">
-			
-                    <ul >
-                    
-                            <li id="li_1" >
-                <label class="description" for="element_1">Name </label>
-                <span>
-                    <input id="element_1_1" name= "element_1_1" class="element text" maxlength="255" size="8" value=""/>
-                    <label>First</label>
-                </span>
-                <span>
-                    <input id="element_1_2" name= "element_1_2" class="element text" maxlength="255" size="14" value=""/>
-                    <label>Last</label>
-                </span> 
-                </li>		<li id="li_2" >
-                <label class="description" for="element_2">Email </label>
-                <div>
-                    <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
-                </div> 
-                </li>		<li id="li_3" >
-                <label class="description" for="element_3">Phone </label>
-                <span>
-                    <input id="element_3_1" name="element_3_1" class="element text" size="3" maxlength="3" value="" type="text"> -
-                    <label for="element_3_1">(###)</label>
-                </span>
-                <span>
-                    <input id="element_3_2" name="element_3_2" class="element text" size="3" maxlength="3" value="" type="text"> -
-                    <label for="element_3_2">###</label>
-                </span>
-                <span>
-                     <input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
-                    <label for="element_3_3">####</label>
-                </span>
-                 
-                </li>		<li id="li_5" >
-                <label class="description" for="element_5">Multiple Choice </label>
-                <span>
-                    <input id="element_5_1" name="element_5" class="element radio" type="radio" value="1" />
-                    <label class="choice" for="element_5_1">Current Student</label>
-                <input id="element_5_2" name="element_5" class="element radio" type="radio" value="2" />
-                <label class="choice" for="element_5_2">Prospective Student</label>
-                <input id="element_5_3" name="element_5" class="element radio" type="radio" value="3" />
-                <label class="choice" for="element_5_3">Instructor</label>
-        
-                </span> 
-                </li>		<li id="li_4" >
-                <label class="description" for="element_4">Paragraph </label>
-                <div>
-                    <textarea id="element_4" name="element_4" class="element textarea medium"></textarea> 
-                </div> 
+            <section class="contact-info-box">
+                <h2>Contact Form</h2>
+                <div></div>
+                <form onSubmit="alert('The form was submitted successfully. Thank you.');" method="post" class="form">
+                    <ul>
+                        <li>
+                            <div class="formRow">
+                                <div class="formLabel">
+                                    <label for="firstname" class="description">First name</label>
+                                </div>
+                                <div class="formInput">
+                                    <input type="text" name="firstname" id="firstname" maxlength="80" placeholder="First" required>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="lastname" class="description">Last name</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="text" name="lastname" id="lastname" maxlength="80" placeholder="Last" required>
+                        </div>
+                    </div>
                 </li>
-                    
-                            <li class="buttons">
-                        <input type="hidden" name="form_id" value="56778" />
-                        
-                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                <li>
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="email" class="description">Email</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="email" name="email" id="email" maxlength="80" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="formRow">
+                        <div class="formLabel">
+                                <label for="phone" class="description">Phone</label>
+                        </div>
+                        <div class="formInput">
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                        </div>
+                    </div>
                 </li>
-                    </ul>
-                </form>	
-        
+                <li>
+                    <div class="formRow">
+                            <label class="description" for="element_5">Status</label>
+                        <div class="select">
+                            <label><input type="radio" name="status" value="CurrentStudent" required checked> Current Student</label><br>
+                            <label><input type="radio" name="status" value="ProsoectiveStudent"> Prospective Student</label><br>
+                            <label><input type="radio" name="status" value="Instructor"> Instructor</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="formRow">
+                        <div>
+                            <label for="comments" class="description">Questions or Comments</label>
+                        </div>
+                        <div>
+                            <textarea name="comments" id="comments" rows="5" cols="23" required></textarea>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="formRow">
+                        <div class="actions">
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </li>
+                </ul>
+                </form>
             </section>
         </main>
         <footer>
@@ -147,4 +159,5 @@
         </footer>
     </div><!-- end wrapper -->
     </body>
-    </html>
+</html>
+
