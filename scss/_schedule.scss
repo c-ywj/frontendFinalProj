@@ -43,12 +43,12 @@ html {
     grid-auto-rows: minmax(200px, auto);
 }
 
-.month.list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.1em;
-    grid-auto-rows: minmax(1em, auto);
-}
+// .month.list {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-gap: 0.1em;
+//     grid-auto-rows: minmax(1em, auto);
+// }
 
 .day {
     display: grid;
@@ -58,6 +58,16 @@ html {
     padding: 1px;
     background-color: white;
 }
+
+.day.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: .1em;
+    padding: 1px;
+    background-color: white;
+}
+
 
 .day > h4 {
     margin: 0;
