@@ -59,14 +59,15 @@ html {
     background-color: white;
 }
 
-.day.list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: .1em;
-    padding: 1px;
-    background-color: white;
-}
+// .day.list {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 1fr;
+//     grid-row-gap: 1px;
+//     padding: 1px;
+//     background-color: white;
+//     font-size: 0.8em;
+// }
 
 
 .day > h4 {
