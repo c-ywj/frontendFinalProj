@@ -11,6 +11,8 @@
      padding: 15px 60px;
      padding-left: 50px;
      margin: 50px;
+     display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .contact-inner-box
@@ -25,8 +27,7 @@
      line-height: 18px;
      overflow: hidden;
      padding: 15px 30px;
-     width: 380px;
-     margin: 50px;
+     margin: 20px;
 }
 
 label.description

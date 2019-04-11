@@ -1,3 +1,20 @@
+.staff-info-box
+{
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+     background-color: #f0f7fb;
+     background-position: 9px 0px;
+     background-repeat: no-repeat;
+     border-radius: 0px;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 15px 60px;
+     padding-left: 50px;
+     margin: 50px;
+     display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .person
 {
      -moz-border-radius: 6px;
@@ -10,10 +27,7 @@
      line-height: 18px;
      overflow: hidden;
      padding: 15px 30px;
-     width: 40%;
-     margin: 30px;
-     flex-direction: column;
-     display: flex;
+     margin: 20px;
 }
 
 .role
