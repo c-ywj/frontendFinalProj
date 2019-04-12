@@ -37,23 +37,34 @@ header {
                 height: auto;
             }
 
-        }
+            .btn-menu {
+              margin: 5px 5px;
+              background-color: #3D4663;
+              width: 10%;
+              border-radius: 3px;
+              color: white;
+              display: block;
+              border: none;
+              color: white;
+            }
 
+        }
+        
     }
 
 }
 
 .btn-menu {
     display: none;
-  }
+}
 
-  .show {
-    display: block;
-  }
+.show {
+  display: block;
+}
 
-  .show ul{
-    display: block;
-  }
+.show ul{
+  display: block;
+}
 
 
 @media (max-width: 760px) {
@@ -98,11 +109,6 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-  
-    .one-col-narrow, .three-col {
-      margin: 10px auto;
-      width: 100%;
     }
   
   }

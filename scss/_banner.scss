@@ -11,7 +11,7 @@
 
 .info-box {
     position: absolute;
-    top: 4vw;
+    top: 5vw;
 	left: 8vw;
 	color: white;
     animation: slideInLeft 1.5s 0.5s 1 ease both;
@@ -26,13 +26,13 @@
     @include mq($tablet-portrait-medium) {
         &{
             top:1vw;
-            left: 8vw;
+            left: 3vw;
         }
     }
 
     @include mq($phone-wide) {
         &{
-            top:-7vw;
+            top: 3vw;
             left: 3vw;
         }
     }
