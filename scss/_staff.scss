@@ -46,3 +46,22 @@
 {
      margin: 5px;
 }
+
+@media (max-width: 760px) {
+     .person
+     {
+          -moz-border-radius: 6px;
+          -webkit-border-radius: 6px;
+          background-color: #f0f7fb;
+          background-position: 9px 0px;
+          background-repeat: no-repeat;
+          border: solid 1px #3498db;
+          border-radius: 6px;
+          line-height: 18px;
+          overflow: scroll;
+          padding: 15px 30px;
+          margin: 20px;
+          flex-wrap: wrap;
+          display: flex;
+     }
+}
