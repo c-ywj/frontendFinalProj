@@ -57,7 +57,10 @@ html {
     grid-gap: .1em;
     padding: 1px;
     background-color: white;
+    border: 1px solid lightgrey;
 }
+
+
 
 // .day.list {
 //     display: grid;
@@ -72,10 +75,14 @@ html {
 
 .day > h4 {
     margin: 0;
-    padding: 3px;
-    text-align: center;
+    padding: 5px;
     background-color: $day-bg-color;
     color: white;
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
