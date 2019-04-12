@@ -14,6 +14,12 @@ html {
   box-sizing: inherit;
 }
 
+.heading {
+    margin: 10px 16px;
+    padding: 5px;
+    font-size: 2em;
+    font-weight: bold;
+}
 .schedule {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,7 +28,7 @@ html {
 
 .schedule > div:nth-child(1) {
     position: relative;
-    padding: 1em;
+    padding: 16px;
 }
 
 .schedule div:nth-child(1) > h2 {
