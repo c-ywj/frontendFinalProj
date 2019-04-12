@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$day-bg-color: #015b71;
+$day-bg-color: #022e72;
 /* CSS Document */
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -17,20 +17,22 @@ html {
     grid-auto-rows: minmax(100px, auto);
 }
 
-.schedule div:nth-child(1) {
+.schedule > div:nth-child(1) {
     position: relative;
+    padding: 1em;
 }
 
 .schedule div:nth-child(1) > h2 {
-    position: absolute;
-    top: 10px;
-    left: 30px
+    padding: 0.1em;
+}
+
+.toggleBtn {
+    background:#022e72;
 }
 
 .month-label {
     margin: 1em auto;
     font-size: 1.5em;
-    // text-align: center;
 }
 
 
@@ -43,12 +45,13 @@ html {
     grid-auto-rows: minmax(200px, auto);
 }
 
-// .month.list {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-gap: 0.1em;
-//     grid-auto-rows: minmax(1em, auto);
-// }
+.month.calendar.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.1em;
+    grid-auto-rows: minmax(1em, auto);
+}
+
 
 .day {
     display: grid;
@@ -62,15 +65,15 @@ html {
 
 
 
-// .day.list {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-template-rows: 1fr;
-//     grid-row-gap: 1px;
-//     padding: 1px;
-//     background-color: white;
-//     font-size: 0.8em;
-// }
+.day.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-row-gap: 1px;
+    padding: 1px;
+    background-color: white;
+    font-size: 0.8em;
+}
 
 
 .day > h4 {
